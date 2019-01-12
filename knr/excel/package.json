@@ -1,0 +1,22 @@
+{
+  "name": "codingchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "animation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickitaX/codingChallenge.git"
+  },
+  "author": "Nick Shulhin <nickita.shulgin@yahoo.com> (http://nickshulhin.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickitaX/codingChallenge/issues"
+  },
+  "homepage": "https://github.com/NickitaX/codingChallenge#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
