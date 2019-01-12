@@ -21,12 +21,18 @@ func main() {
 		bar += "#"
 	}
 
-	barLength := 0
+	barLength, goBack := 0, false
 	for {
 		formatStr := fmt.Sprintf("%%-%ds\r", lengthMax)
 		fmt.Printf(formatStr, bar[:barLength])
-		barLength = (barLength + 1) % (lengthMax + 1)
+		if goBack {
+			barLength = barLength - 1
+			goBack = barLength != 0
+		} else {
+			barLength = barLength + 1
+			goBack = barLength == lengthMax
+		}
 
-		time.Sleep(time.Millisecond * 300)
+		time.Sleep(time.Millisecond * 150)
 	}
 }
