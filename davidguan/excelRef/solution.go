@@ -34,6 +34,7 @@ func main() {
 		col *= charCount
 		col += charMap[colStr[i]]
 	}
+
 	// Mapping stuff from 1-indexed to 0-indexed
 	fmt.Printf("(%d, %d)\n", row-1, col-1)
 }
