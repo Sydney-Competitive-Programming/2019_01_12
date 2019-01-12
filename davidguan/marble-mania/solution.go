@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // Go has its own circular linked node list implementation, implement own one for fun.
 type circularLinkedNode struct {
@@ -46,10 +49,12 @@ func solve(lastM, pCount int) {
 }
 
 func main() {
+	tStart := time.Now()
 	solve(25, 9)
 	solve(71920, 403)
 	solve(72019, 458)
 
 	// Second problem
 	solve(71920*100, 403)
+	fmt.Println(time.Since(tStart))
 }

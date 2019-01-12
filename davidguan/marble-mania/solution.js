@@ -44,9 +44,11 @@ function solve(lastM, pCount) {
   console.log(max)
 }
 
+console.time('process');
 solve(25, 9)
 solve(71920, 403)
 solve(72019, 458)
 
 // Second problem
 solve(71920 * 100, 403)
+console.timeEnd('process');
