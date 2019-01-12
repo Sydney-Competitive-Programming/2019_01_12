@@ -1,23 +1,15 @@
-const input = 'ABC101';
-
-const code = c => c.charCodeAt(0);
-const aCode = code('A');
-
-codes = input.split('').map(c => c.charCodeAt(0));
+x='ABC101'
 
 let i = 0;
 
 let row = 0;
-let col = 0;
 
 while (true) {
-  c = codes[i++];
+  c = x[i++].charCodeAt(0);
 
   if (c < 65) { i--; break; }
 
   row=row*26+c-64;
 }
 
-col=input.slice(i)-1;
-
-console.log([row-1, col]);
+console.log([row-1, x.slice(i)-1]);
