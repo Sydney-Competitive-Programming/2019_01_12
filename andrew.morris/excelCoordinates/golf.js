@@ -18,12 +18,6 @@ while (true) {
   row=row*26+c-64;
 }
 
-while (true) {
-  c = codes[i++];
+col=input.slice(i)-1;
 
-  if (!c) break;
-
-  col=col*10+c-48;
-}
-
-console.log([row-1, col-1]);
+console.log([row-1, col]);
